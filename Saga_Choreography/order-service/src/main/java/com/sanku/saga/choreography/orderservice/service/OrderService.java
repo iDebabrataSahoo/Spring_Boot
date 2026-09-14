@@ -32,11 +32,10 @@ public class OrderService {
 
     private PurchaseOrder dtoToEntity(OrderRequestDto orderRequestDto) {
         PurchaseOrder purchaseOrder = new PurchaseOrder();
-        purchaseOrder.setId(orderRequestDto.getOrderId());
-        purchaseOrder.setOrderId(orderRequestDto.getOrderId());
         purchaseOrder.setProductId(orderRequestDto.getProductId());
-        purchaseOrder.setPrice(orderRequestDto.getAmount());
+        purchaseOrder.setUserId(orderRequestDto.getUserId());
         purchaseOrder.setOrderStatus(OrderStatus.ORDER_CREATED);
+        purchaseOrder.setPrice(orderRequestDto.getAmount());
         return purchaseOrder;
     }
 }
