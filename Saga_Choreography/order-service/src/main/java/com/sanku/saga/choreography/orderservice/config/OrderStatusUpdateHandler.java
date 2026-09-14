@@ -1,7 +1,5 @@
 package com.sanku.saga.choreography.orderservice.config;
 
-
-
 import com.sanku.saga.choreography.common.dto.OrderRequestDto;
 import com.sanku.saga.choreography.common.event.OrderStatus;
 import com.sanku.saga.choreography.common.event.PaymentStatus;
